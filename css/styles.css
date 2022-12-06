@@ -566,6 +566,31 @@ body .link:focus {
 		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
+
+
+
+
+.pos-relative {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: red;
+}
+
+.pos-absolute::before {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: red;
+}
+
+
+
+
+
+
 .card-text-progect {
 	padding: 20px 24px;
 	border-right: 1px solid var(--color-border-card);
@@ -587,4 +612,42 @@ body .link:focus {
 	font-size: 16px;
 	line-height: 1.88;
 	color: var(--color-main);
+}
+
+/* --- модалка --- */
+.backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+	opacity: 0;
+	pointer-events: none;
+}
+
+.form-modal {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	min-width: 528px;
+	min-height: 581px;
+
+	background: var(--color-bgr-head);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+		0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 4px;
+}
+
+.close-modal {
+	position: absolute;
+	right: 8px;
+	top: 8px;
 }
