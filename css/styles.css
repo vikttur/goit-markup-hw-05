@@ -566,30 +566,31 @@ body .link:focus {
 		1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-
-
-
-
 .pos-relative {
 	position: relative;
-	width: 100%;
-	height: 100%;
-	background-color: red;
 }
 
-.pos-absolute::before {
-	position: fixed;
-	width: 100%;
-	height: 100%;
+.progect-description {
+	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: red;
+
+	width: 100%;
+	height: 100%;
+	padding: 63px 24px;
+	background-color: var(--color-accent);
+
+	font-size: 18px;
+	line-height: 1.56;
+	color: var(--color-bgr-head);
+
+	opacity: 0;
 }
 
-
-
-
-
+.card-link:hover .progect-description,
+.card-link:focus .progect-description {
+	opacity: 0.9;
+}
 
 .card-text-progect {
 	padding: 20px 24px;
