@@ -350,6 +350,7 @@ p {
 	line-height: 1.14;
 	color: var(--color-bgr-head);
 	text-transform: uppercase;
+	font-weight: 700;
 }
 
 /* --- section team --- */
